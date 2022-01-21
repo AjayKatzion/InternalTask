@@ -1,0 +1,51 @@
+<!--
+  @description       : 
+  @author            : Ajay Thankachan
+  @group             : 
+  @last modified on  : 01-21-2022
+  @last modified by  : Ajay Thankachan
+-->
+<template>
+    <div class="slds-grid slds-wrap">
+        <div class="slds-col slds-size_1-of-6">
+            <div class="slds-col slds-size_3-of-3 gridsize">
+                <lightning-input type="text" label="Enter numbers" name="input1" onchange={handleChange} value={fnum}></lightning-input>
+            </div>
+           
+        
+        
+        <div class="slds-grid slds-grid_align-center">
+        <button value ="1"  class=" custombutton " onclick={buttonClicked} >1</button>
+        <button value ="2"  class=" custombutton " onclick={buttonClicked} >2</button>
+        <button value ="3"  class=" custombutton " onclick={buttonClicked} >3</button>
+        <button value ="+"   class=" custombutton " onclick={buttonClicked} >+</button>
+         
+        </div>
+       
+        <div class="slds-grid slds-grid_align-center">
+           
+        <button value ="4"  class=" custombutton " onclick={buttonClicked} >4</button>
+        <button value ="5"  class=" custombutton " onclick={buttonClicked} >5</button>
+        <button value ="6" class=" custombutton " onclick={buttonClicked} >6</button>
+        <button value ="-"  class=" custombutton " onclick={buttonClicked} >-</button>
+        
+        </div>
+        
+        <div class="slds-grid slds-grid_align-center">
+        <button value ="7"  class=" custombutton " onclick={buttonClicked} >7</button>   
+        <button value ="8"  class=" custombutton " onclick={buttonClicked} >8</button>
+        <button value ="9"  class=" custombutton " onclick={buttonClicked} >9</button>
+        <button value ="*"  class=" custombutton " onclick={buttonClicked} >*</button>    
+       
+        </div>
+        
+        <div class="slds-grid slds-grid_align-center">
+        <button class=" custombutton "  onclick={handleClick}  >C</button> 
+        <button value ="0"   class=" custombutton  " onclick={buttonClicked} >0</button>
+        <button value ="="   class=" custombutton " onclick={Calculate} >=</button>
+        <button value ="/"   class=" custombutton " onclick={buttonClicked} >/</button>
+        </div>
+        
+        </div>
+        </div>
+</template>
